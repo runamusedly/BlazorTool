@@ -91,7 +91,7 @@
     
 }
 
-/*입력 및 결과*/
+/*입력*/
 .display-input {
     font-weight: bold;
   
@@ -109,8 +109,26 @@
     font-size: 1.3rem;
 }
 
-/*계산과정*/
+/*계산결과*/
 .display-result {
+    font-weight: bold;
+    color: var(--displayResult);
+}
+
+.display-normal {
+    font-size: 2.5rem;
+}
+
+.display-small {
+    font-size: 2rem;
+}
+
+.display-xsmall {
+    font-size: 1.3rem;
+}
+
+/*계산과정*/
+.display-process {
     margin-top: 20px;
     opacity: 0.8;
    
@@ -122,4 +140,19 @@
 
 .process-small {
     font-size: 1.3rem;
+}
+
+@media (max-height: 700px) {
+    .calculator-body {
+        height: 400px;
+    }
+
+    .calculator-display {
+        line-height: 50px;
+        padding: 10px 20px 0px 0px;
+    }
+
+    .display-process {
+        margin-top: 5px;
+    }
 }

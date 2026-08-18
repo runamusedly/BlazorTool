@@ -7,5 +7,7 @@
         public string? Operator { get; set; } = null;
         public double Result { get; set; } = 0;
         public string? ProcessCalc { get; set; } = null;
+
+        public bool IsShowingResult { get; set; } = false;
     }
 }
