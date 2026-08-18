@@ -21,6 +21,10 @@
     
     width: 100%;
     z-index: 200;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    
 }
 
 .top-row[b-k3yzsa64z4] {
@@ -110,6 +114,10 @@
     font-size: 1.1rem;
 }
 
+nav[b-0ymghhbtku] {
+    text-align: right;
+}
+
 .bi[b-0ymghhbtku] {
     display: inline-block;
     position: relative;
@@ -135,6 +143,8 @@
 .nav-item[b-0ymghhbtku] {
     font-size: 1rem;
     padding-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
     
 }
 
@@ -151,6 +161,7 @@
         height: 3rem;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         line-height: 3rem;
         text-decoration-line: none;
     }
@@ -183,16 +194,25 @@
         margin: 10px
     }
 
-.flex-column[b-0ymghhbtku] {
-    width: 100px;
-    
-}
-
 .nav-toggle[b-0ymghhbtku] {
     width: 100%;
     margin: 0px 0px 0px 5px;
     background-color: hsl(var(--bg-hue), var(--bg-sat), var(--bg-light));
 }
+
+.flex-column[b-0ymghhbtku] {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.flex-column div[b-0ymghhbtku] {
+    
+    text-align: right;
+}
+
+
 
 @media (min-width: 641px) {
     .navbar-toggler[b-0ymghhbtku] {
@@ -210,7 +230,6 @@
         overflow-y: auto;
     }
 }
-
 /* /Pages/Advanced.razor.rz.scp.css */
 .calculator-body[b-ib2hj3ysp0] {
     background-color: hsla(235, 58%, 78%, 0.8);
@@ -391,7 +410,7 @@
     
 }
 
-/*입력 및 결과*/
+/*입력*/
 .display-input[b-kn1y1rkao2] {
     font-weight: bold;
   
@@ -409,8 +428,26 @@
     font-size: 1.3rem;
 }
 
-/*계산과정*/
+/*계산결과*/
 .display-result[b-kn1y1rkao2] {
+    font-weight: bold;
+    color: var(--displayResult);
+}
+
+.display-normal[b-kn1y1rkao2] {
+    font-size: 2.5rem;
+}
+
+.display-small[b-kn1y1rkao2] {
+    font-size: 2rem;
+}
+
+.display-xsmall[b-kn1y1rkao2] {
+    font-size: 1.3rem;
+}
+
+/*계산과정*/
+.display-process[b-kn1y1rkao2] {
     margin-top: 20px;
     opacity: 0.8;
    
@@ -422,4 +459,19 @@
 
 .process-small[b-kn1y1rkao2] {
     font-size: 1.3rem;
+}
+
+@media (max-height: 700px) {
+    .calculator-body[b-kn1y1rkao2] {
+        height: 400px;
+    }
+
+    .calculator-display[b-kn1y1rkao2] {
+        line-height: 50px;
+        padding: 10px 20px 0px 0px;
+    }
+
+    .display-process[b-kn1y1rkao2] {
+        margin-top: 5px;
+    }
 }

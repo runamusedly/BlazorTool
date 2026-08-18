@@ -36,9 +36,9 @@
     --border-sat: 30%;
     --border-light: 60%;
     /*네비게이션링크*/
-    --navMenuLink-hue: 210;
-    --navMenuLink-sat: 100%;
-    --navMenuLink-light: 40%;
+    --navMenuLink-hue: 0;
+    --navMenuLink-sat: 0%;
+    --navMenuLink-light: 0%;
     /*네비게이션메뉴*/
     --navMenu-hue: 227;
     --navMenu-sat: 70%;
@@ -51,7 +51,9 @@
     --buttonshadow: hsl(0, 0%, 30%);
     --buttonshadow-active: hsl(0, 0%, 10%);
     /*경고,주의메시지*/
-    --warningMessage: hsl(0, 100%, 70%)
+    --warningMessage: hsl(0, 100%, 70%);
+    /*계산결과*/
+    --displayResult: hsl(240, 100%, 50%);
 }
 
 .theme-samsung-dark {
@@ -92,9 +94,9 @@
     --border-sat: 0%;
     --border-light: 10%;
     /*네비게이션링크*/
-    --navMenuLink-hue: 210;
-    --navMenuLink-sat: 100%;
-    --navMenuLink-light: 60%;
+    --navMenuLink-hue: 0;
+    --navMenuLink-sat: 0%;
+    --navMenuLink-light: 100%;
     /*네비게이션메뉴*/
     --navMenu-hue: 220;
     --navMenu-sat: 100%;
@@ -107,7 +109,9 @@
     --buttonshadow: hsl(0, 0%, 60%);
     --buttonshadow-active: hsl(0, 0%, 90%);
     /*경고,주의메시지*/
-    --warningMessage: hsl(0, 100%, 70%)
+    --warningMessage: hsl(0, 100%, 70%);
+    /*계산결과*/
+    --displayResult: hsl(51, 100%, 50%);
 }
 
 .theme-samsung-dark-bluetech {
@@ -148,9 +152,9 @@
     --border-sat: 10%;
     --border-light: 60%;
     /*네비게이션링크*/
-    --navMenuLink-hue: 210;
-    --navMenuLink-sat: 100%;
-    --navMenuLink-light: 60%;
+    --navMenuLink-hue: 0;
+    --navMenuLink-sat: 0%;
+    --navMenuLink-light: 100%;
     /*네비게이션메뉴*/
     --navMenu-hue: 210;
     --navMenu-sat: 100%;
@@ -163,7 +167,9 @@
     --buttonshadow: hsl(51, 100%, 50%);
     --buttonshadow-active: hsl(51, 100%, 40%);
     /*경고,주의메시지*/
-    --warningMessage: hsl(0, 100%, 70%)
+    --warningMessage: hsl(0, 100%, 70%);
+    /*계산결과*/
+    --displayResult: hsl(120, 100%, 50%);
 }
 
 .theme-skhynix-light {
@@ -219,7 +225,9 @@
     --buttonshadow: hsl(0, 0%, 30%);
     --buttonshadow-active: hsl(0, 0%, 10%);
     /*경고,주의메시지*/
-    --warningMessage: hsl(40, 100%, 40%)
+    --warningMessage: hsl(40, 100%, 40%);
+    /*계산결과*/
+    --displayResult: hsl(33, 100%, 50%);
 }
 
 .theme-skhynix-dark {
@@ -252,17 +260,17 @@
     --num-sat: 0%;
     --num-light: 0%;
     /*출력텍스트*/
-    --displayText-hue: 34;
+    --displayText-hue: 40;
     --displayText-sat: 100%;
-    --displayText-light: 50%;
+    --displayText-light: 97%;
     /*Border*/
     --border-hue: 0;
     --border-sat: 0%;
     --border-light: 0%;
     /*네비게이션링크*/
-    --navMenuLink-hue: 154;
-    --navMenuLink-sat: 11%;
-    --navMenuLink-light: 88%;
+    --navMenuLink-hue: 0;
+    --navMenuLink-sat: 0%;
+    --navMenuLink-light: 100%;
     /*네비게이션메뉴*/
     --navMenu-hue: 34;
     --navMenu-sat: 100%;
@@ -275,7 +283,9 @@
     --buttonshadow: hsl(0, 0%, 60%);
     --buttonshadow-active: hsl(0, 0%, 90%);
     /*경고,주의메시지*/
-    --warningMessage: hsl(0, 100%, 70%)
+    --warningMessage: hsl(0, 100%, 70%);
+    /*계산결과*/
+    --displayResult: hsl(33, 100%, 50%);
 }
 html {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
