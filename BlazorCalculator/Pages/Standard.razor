@@ -5,7 +5,7 @@
 
 @*디스플레이창*@
 <div class="calculator-display">
-	@if (ShowLimitWarning)
+	@if (Calc.ShowLimitWarning)
 	{
 		<div class="warning">입력가능한 숫자는 12자리입니다!</div>
 	}
@@ -64,12 +64,11 @@
 	}
 
 	const int MaxDigits = 12;
-	bool ShowLimitWarning = false;
 
 	//숫자버튼입력
 	void InputNum(string num)
 	{
-		ShowLimitWarning = false;
+		Calc.ShowLimitWarning = false;
 
 		if ((Calc.CurrentInput == "0") && (Calc.ProcessCalc is null))
 		{
@@ -90,7 +89,7 @@
 				{
 					if (Calc.CurrentInput.Length > MaxDigits)
 					{
-						ShowLimitWarning = true;
+						Calc.ShowLimitWarning = true;
 						return;
 					}
 
@@ -100,7 +99,7 @@
 				{
 					if (Calc.CurrentInput.Length > (MaxDigits - 1))
 					{
-						ShowLimitWarning = true;
+						Calc.ShowLimitWarning = true;
 						return;
 					}
 
@@ -121,7 +120,7 @@
 			{
 				if (Calc.CurrentInput.Length > MaxDigits)
 				{
-					ShowLimitWarning = true;
+					Calc.ShowLimitWarning = true;
 					return;
 				}
 
@@ -131,7 +130,7 @@
 			{
 				if (Calc.CurrentInput.Length > (MaxDigits - 1))
 				{
-					ShowLimitWarning = true;
+					Calc.ShowLimitWarning = true;
 					return;
 				}
 
@@ -212,6 +211,7 @@
 	{
 		if (Calc.ProcessCalc is null)
 		{
+			Calc.ShowLimitWarning = false;
 			Calc.PreviousValue = double.Parse(Calc.CurrentInput);
 			Calc.Operator = op;
 			Calc.ProcessCalc = FormatNumber(Calc.CurrentInput) + " " + op + " ";
@@ -221,6 +221,7 @@
 		{
 			if (Calc.ProcessCalc.Contains("="))
 			{
+				Calc.ShowLimitWarning = false;
 				Calc.IsShowingResult = false;
 				Calc.Operator = op;
 				Calc.ProcessCalc = Calc.Result.ToString("#,##0.############") + " " + op + " ";
@@ -228,6 +229,7 @@
 			}
 			else
 			{
+				Calc.ShowLimitWarning = false;
 				double current = double.Parse(Calc.CurrentInput);
 				string? previousOp = Calc.Operator;
 				if (previousOp is null)
@@ -314,6 +316,7 @@
 			}
 			else
 			{
+				Calc.ShowLimitWarning = false;
 				Calc.IsShowingResult = true;
 				Calc.ProcessCalc += FormatNumber(Calc.CurrentInput);
 				Calc.ProcessCalc += " =";
@@ -345,12 +348,13 @@
 	//전체삭제
 	void Clear()
 	{
+		Calc.IsShowingResult = false;
 		Calc.CurrentInput = "0";
 		Calc.PreviousValue = 0;
 		Calc.Operator = null;
 		Calc.Result = 0;
 		Calc.ProcessCalc = null;
-		ShowLimitWarning = false;
+		Calc.ShowLimitWarning = false;
 	}
 
 	//하나씩 지우기

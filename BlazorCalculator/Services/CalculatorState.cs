@@ -9,5 +9,6 @@
         public string? ProcessCalc { get; set; } = null;
 
         public bool IsShowingResult { get; set; } = false;
+        public bool ShowLimitWarning { get; set; } = false;
     }
 }
