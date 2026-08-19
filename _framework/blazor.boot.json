@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BlazorCalculator",
   "resources": {
-    "hash": "sha256-I4HBdgE4gp1ikbCcIv/GdO5y68IQIH9gL04lvuNIjlA=",
+    "hash": "sha256-1HXcVk0fH/G211tEsCpu+tynXjfTP18W8OSPqXvGlHA=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-tpqq1iQ3k389EmHuv9seJvz2qnyNXtQgCKZ9Y2huMY8="
     },
@@ -47,7 +47,7 @@
       "System.Text.Json.wasm": "sha256-ZCIfw/UcjMK/xDQwg7spGy2hQopJG8JschLLD2ae8AQ=",
       "System.Text.RegularExpressions.wasm": "sha256-QDY1fw+uRh8SRATrPAVeYk+dujYqfGm5T/c2iNubvj0=",
       "System.Private.CoreLib.wasm": "sha256-K3/keNy5V6G2emw/3njUji2S9nAwZn+UrhxLF5rcXh4=",
-      "BlazorCalculator.wasm": "sha256-QNk5x2wpZOyc6EaqYvrIb7kQn3Ebyo5YjgNi4gusK8A="
+      "BlazorCalculator.wasm": "sha256-Jop0P0fRL/O4iLkJ2pHKNaEEgEJWZ2Wy3wYPFX/GG2Y="
     }
   },
   "cacheBootResources": true,

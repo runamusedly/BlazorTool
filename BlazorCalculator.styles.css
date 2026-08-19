@@ -333,12 +333,12 @@ nav[b-0ymghhbtku] {
 
 .calculator-button-operator[b-kn1y1rkao2], .calculator-button-clear[b-kn1y1rkao2], .calculator-button-number[b-kn1y1rkao2] {
     user-select: none;
-    box-shadow: 0 3px 6px var(--buttonshadow);
+    box-shadow: 0 3px 4px var(--buttonshadow);
     transition: transform 0.1s ease,, box-shadow 0.1s ease;
 }
 
     .calculator-button-operator:active[b-kn1y1rkao2], .calculator-button-clear:active[b-kn1y1rkao2], .calculator-button-number:active[b-kn1y1rkao2] {
-        box-shadow: 0 1px 3px var(--buttonshadow-active);
+        box-shadow: 0 1px 2px var(--buttonshadow-active);
         transform: scale(0.95);
     }
 
@@ -386,14 +386,14 @@ nav[b-0ymghhbtku] {
 }
 
 
-
+/*출력창*/
 .calculator-display[b-kn1y1rkao2] {
     
     text-align: right;
     border-radius: 10px;
     padding: 10px 20px 0px 0px;
     margin: 0px 5px 0px 5px;
-    min-height: 190px;
+    min-height: 150px;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -404,7 +404,7 @@ nav[b-0ymghhbtku] {
 
 /*경고*/
 .warning[b-kn1y1rkao2] {
-    font-size: 0.8rem;
+    font-size: 1rem;
     opacity: 0.7;
     color: var(--warningMessage);
     
@@ -463,15 +463,59 @@ nav[b-0ymghhbtku] {
 
 @media (max-height: 700px) {
     .calculator-body[b-kn1y1rkao2] {
-        height: 400px;
+        height: 400px; 
     }
 
     .calculator-display[b-kn1y1rkao2] {
-        line-height: 50px;
-        padding: 10px 20px 0px 0px;
+        line-height: 40px;
+        padding: 10px 20px 0px 0px; 
     }
 
     .display-process[b-kn1y1rkao2] {
         margin-top: 5px;
+    }
+
+    /*경고*/
+    .warning[b-kn1y1rkao2] {
+        font-size: 0.7rem;
+        opacity: 0.7;
+        color: var(--warningMessage);
+    }
+
+    /*입력*/
+    .display-input[b-kn1y1rkao2] {
+        font-weight: bold;
+    }
+
+    .display-normal[b-kn1y1rkao2] {
+        font-size: 2rem;
+    }
+
+    .display-small[b-kn1y1rkao2] {
+        font-size: 1.5rem;
+    }
+
+    .display-xsmall[b-kn1y1rkao2] {
+        font-size: 1rem;
+    }
+
+    /*계산결과*/
+    .display-result[b-kn1y1rkao2] {
+        font-weight: bold;
+        color: var(--displayResult);
+    }
+
+    /*계산과정*/
+    .display-process[b-kn1y1rkao2] {
+        padding-bottom: 20px;
+        opacity: 0.8;
+    }
+
+    .process-normal[b-kn1y1rkao2] {
+        font-size: 1.3rem;
+    }
+
+    .process-small[b-kn1y1rkao2] {
+        font-size: 1rem;
     }
 }
