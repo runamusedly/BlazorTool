@@ -7,7 +7,7 @@
 <div class="calculator-display">
 	@if (Calc.ShowLimitWarning)
 	{
-		<div class="warning">입력가능한 숫자는 12자리입니다!</div>
+		<div class="warning">@Calc.WarningMessage</div>
 	}
 
 	@if (Calc.IsShowingResult)
@@ -64,6 +64,8 @@
 	}
 
 	const int MaxDigits = 12;
+	const string LengthMessage = "입력 가능한 숫자는 12자리입니다.";
+	const string DivideMessage = "0으로 나눌 수 없습니다.";
 
 	//숫자버튼입력
 	void InputNum(string num)
@@ -90,6 +92,7 @@
 					if (Calc.CurrentInput.Length > MaxDigits)
 					{
 						Calc.ShowLimitWarning = true;
+						Calc.WarningMessage = LengthMessage;
 						return;
 					}
 
@@ -100,6 +103,7 @@
 					if (Calc.CurrentInput.Length > (MaxDigits - 1))
 					{
 						Calc.ShowLimitWarning = true;
+						Calc.WarningMessage = LengthMessage;
 						return;
 					}
 
@@ -121,6 +125,7 @@
 				if (Calc.CurrentInput.Length > MaxDigits)
 				{
 					Calc.ShowLimitWarning = true;
+					Calc.WarningMessage = LengthMessage;
 					return;
 				}
 
@@ -131,6 +136,7 @@
 				if (Calc.CurrentInput.Length > (MaxDigits - 1))
 				{
 					Calc.ShowLimitWarning = true;
+					Calc.WarningMessage = LengthMessage;
 					return;
 				}
 
@@ -246,6 +252,19 @@
 						Calc.PreviousValue = Calc.PreviousValue - current;
 						break;
 					case "\u00F7":
+						if (current == 0)
+						{
+							Calc.ShowLimitWarning = true;
+							Calc.WarningMessage = DivideMessage;
+							Calc.CurrentInput = "0";
+							Calc.PreviousValue = 0;
+							Calc.Operator = null;
+							Calc.Result = 0;
+							Calc.ProcessCalc = null;
+
+							return;
+						}
+
 						Calc.PreviousValue = Calc.PreviousValue / current;
 						break;
 					case "\u00D7":
@@ -331,6 +350,20 @@
 						Calc.PreviousValue = Calc.PreviousValue - current;
 						break;
 					case "\u00F7": //Unicode
+						if (current == 0)
+						{
+							Calc.ShowLimitWarning = true;
+							Calc.WarningMessage = DivideMessage;
+							Calc.IsShowingResult = false;
+							Calc.CurrentInput = "0";
+							Calc.PreviousValue = 0;
+							Calc.Operator = null;
+							Calc.Result = 0;
+							Calc.ProcessCalc = null;
+
+							return;
+						}
+
 						Calc.PreviousValue = Calc.PreviousValue / current;
 						break;
 					case "\u00D7":

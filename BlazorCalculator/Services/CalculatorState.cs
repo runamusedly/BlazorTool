@@ -10,5 +10,7 @@
 
         public bool IsShowingResult { get; set; } = false;
         public bool ShowLimitWarning { get; set; } = false;
+        public string WarningMessage { get; set; } = "";
+        
     }
 }
