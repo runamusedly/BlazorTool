@@ -1,8 +1,8 @@
 .theme-samsung-light {
     /*배경*/
-    --bg-hue: 154;
-    --bg-sat: 11%;
-    --bg-light: 88%;
+    --bg-hue: 0;
+    --bg-sat: 0%;
+    --bg-light: 80%;
     /*연산자배경*/
     --opbg-hue: 240;
     --opbg-sat: 60%;
@@ -51,7 +51,7 @@
     --buttonshadow: hsl(0, 0%, 30%);
     --buttonshadow-active: hsl(0, 0%, 10%);
     /*경고,주의메시지*/
-    --warningMessage: hsl(0, 100%, 70%);
+    --warningMessage: hsl(5, 100%, 50%);
     /*계산결과*/
     --displayResult: hsl(240, 100%, 50%);
 }
@@ -109,7 +109,7 @@
     --buttonshadow: hsl(0, 0%, 60%);
     --buttonshadow-active: hsl(0, 0%, 90%);
     /*경고,주의메시지*/
-    --warningMessage: hsl(0, 100%, 70%);
+    --warningMessage: hsl(16, 100%, 50%);
     /*계산결과*/
     --displayResult: hsl(51, 100%, 50%);
 }
@@ -117,7 +117,7 @@
 .theme-samsung-dark-bluetech {
     /*배경*/
     --bg-hue: 210;
-    --bg-sat: 90%;
+    --bg-sat: 60%;
     --bg-light: 10%;
     /*연산자배경*/
     --opbg-hue: 210;
@@ -164,39 +164,39 @@
     --navMenuActive-sat: 90%;
     --navMenuActive-light: 40%;
     /*버튼shadow*/
-    --buttonshadow: hsl(51, 100%, 50%);
-    --buttonshadow-active: hsl(51, 100%, 40%);
+    --buttonshadow: hsl(130, 100%, 23%);
+    --buttonshadow-active: hsl(120, 100%, 70%);
     /*경고,주의메시지*/
-    --warningMessage: hsl(0, 100%, 70%);
+    --warningMessage: hsl(16, 100%, 50%);
     /*계산결과*/
     --displayResult: hsl(120, 100%, 50%);
 }
 
 .theme-skhynix-light {
     /*배경*/
-    --bg-hue: 154;
-    --bg-sat: 11%;
-    --bg-light: 88%;
+    --bg-hue: 180;
+    --bg-sat: 100%;
+    --bg-light: 97%;
     /*연산자배경*/
-    --opbg-hue: 351;
-    --opbg-sat: 81%;
-    --opbg-light: 50%;
+    --opbg-hue: 120;
+    --opbg-sat: 60%;
+    --opbg-light: 75%;
     /*연산자*/
     --op-hue: 0;
     --op-sat: 0%;
     --op-light: 0%;
     /*클리어배경*/
-    --clearbg-hue: 210;
-    --clearbg-sat: 60%;
+    --clearbg-hue: 290;
+    --clearbg-sat: 50%;
     --clearbg-light: 80%;
     /*클리어*/
-    --clear-hue: 351;
-    --clear-sat: 81%;
+    --clear-hue: 358;
+    --clear-sat: 90%;
     --clear-light: 50%;
     /*숫자버튼배경*/
-    --numbg-hue: 37;
-    --numbg-sat: 84%;
-    --numbg-light: 50%;
+    --numbg-hue: 215;
+    --numbg-sat: 40%;
+    --numbg-light: 80%;
     /*숫자버튼*/
     --num-hue: 0;
     --num-sat: 0%;
@@ -209,14 +209,14 @@
     --border-hue: 240;
     --border-sat: 10%;
     --border-light: 60%;
-    /*네비게이션링크*/
+    /*네비게이션링크(toggle)*/
     --navMenuLink-hue: 0;
     --navMenuLink-sat: 0%;
     --navMenuLink-light: 0%;
     /*네비게이션메뉴*/
-    --navMenu-hue: 34;
+    --navMenu-hue: 240;
     --navMenu-sat: 100%;
-    --navMenu-light: 46%;
+    --navMenu-light: 40%;
     /*네비게이션메뉴활성*/
     --navMenuActive-hue: 360;
     --navMenuActive-sat: 90%;
@@ -225,9 +225,9 @@
     --buttonshadow: hsl(0, 0%, 30%);
     --buttonshadow-active: hsl(0, 0%, 10%);
     /*경고,주의메시지*/
-    --warningMessage: hsl(40, 100%, 40%);
+    --warningMessage: hsl(5, 100%, 50%);
     /*계산결과*/
-    --displayResult: hsl(33, 100%, 50%);
+    --displayResult: hsl(16, 100%, 50%);
 }
 
 .theme-skhynix-dark {
@@ -236,29 +236,29 @@
     --bg-sat: 0%;
     --bg-light: 0%;
     /*연산자배경*/
-    --opbg-hue: 351;
-    --opbg-sat: 81%;
-    --opbg-light: 50%;
+    --opbg-hue: 60;
+    --opbg-sat: 90%;
+    --opbg-light: 20%;
     /*연산자*/
-    --op-hue: 0;
-    --op-sat: 0%;
-    --op-light: 0%;
+    --op-hue: 208;
+    --op-sat: 100%;
+    --op-light: 97%;
     /*클리어배경*/
-    --clearbg-hue: 154;
-    --clearbg-sat: 11%;
-    --clearbg-light: 88%;
+    --clearbg-hue: 105;
+    --clearbg-sat: 40%;
+    --clearbg-light: 45%;
     /*클리어*/
-    --clear-hue: 351;
-    --clear-sat: 81%;
-    --clear-light: 50%;
+    --clear-hue: 0;
+    --clear-sat: 100%;
+    --clear-light: 25%;
     /*숫자버튼배경*/
-    --numbg-hue: 37;
-    --numbg-sat: 84%;
-    --numbg-light: 50%;
+    --numbg-hue: 80;
+    --numbg-sat: 50%;
+    --numbg-light: 30%;
     /*숫자버튼*/
-    --num-hue: 0;
-    --num-sat: 0%;
-    --num-light: 0%;
+    --num-hue: 60;
+    --num-sat: 100%;
+    --num-light: 94%;
     /*출력텍스트*/
     --displayText-hue: 40;
     --displayText-sat: 100%;
@@ -283,7 +283,7 @@
     --buttonshadow: hsl(0, 0%, 60%);
     --buttonshadow-active: hsl(0, 0%, 90%);
     /*경고,주의메시지*/
-    --warningMessage: hsl(0, 100%, 70%);
+    --warningMessage: hsl(16, 100%, 50%);
     /*계산결과*/
     --displayResult: hsl(33, 100%, 50%);
 }
